@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>App list</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+</head>
+<body>
+        <nav class="navbar navbar-dark bg-dark">
+                
+                <span class="navbar-text align-center">App list</span>
+                
+              </nav>    
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+                <div class="container align-center">
+                <h1 class="display-4 ">My to-do list</h1>
+                </div>
+        </div>
+    
+   
+
+    <form onsubmit="return addTask(this)" class="form-inline">
+        <div class="form-group mb-2">
+        <input type="text" id="task" class="form-control" placeholder="Task" >
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+        <input type="text" id="status" class="form-control" placeholder="Status(done,doing,to-do)">
+        </div>
+        <button class="btn btn-dark mb-2" type="submit" >Add</button>
+    </form>
+</hr>
+<div class="container">
+    <ul class="list-group" id="tasks">
+            
+
+    </ul>
+</div>
+</div>
+
+    <footer>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="sockets.js"></script>
+    </footer>
+</body>
+</html>
